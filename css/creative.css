@@ -9,7 +9,7 @@ html {
   height: 100%; }
 
 body {
-  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif; }
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
 
 hr {
   max-width: 50px;
@@ -77,6 +77,7 @@ img::-moz-selection {
 body {
   -webkit-tap-highlight-color: #222222; }
 
+    
 #mainNav {
   border-color: rgba(34, 34, 34, 0.05);
   background-color: white;
@@ -171,6 +172,8 @@ header.masthead {
       font-weight: 300;
       margin-bottom: 50px;
       color: rgba(255, 255, 255, 0.7); }
+      
+      
   @media (min-width: 768px) {
     header.masthead {
       height: 100%;
@@ -372,6 +375,12 @@ ul.social-buttons {
     height: 100%;
     padding: 15px;
     width: auto;
+}
+
+/* url */
+
+.url {
+    text-decoration: none;
 }
 
 /* Map */
