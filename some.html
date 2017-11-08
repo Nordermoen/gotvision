@@ -38,10 +38,10 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">Om</a>
+              <a class="nav-link js-scroll-trigger" href="index.html#about">Om</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Tjenester</a>
+              <a class="nav-link js-scroll-trigger" href="index.html#services">Tjenester</a>
             </li>
             <!--
             <li class="nav-item">
@@ -49,7 +49,7 @@
             </li>
             -->
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Kontakt</a>
+              <a class="nav-link js-scroll-trigger" href="index.html#contact">Kontakt</a>
             </li>
         </ul>
       </div>
@@ -162,25 +162,29 @@ Vi er her for og hjelpe deg med bedriften din sin identitet, optimalisert for di
           <div class="col-md-4">
             <ul class="list-inline social-buttons">
               <li class="list-inline-item">
-                <a href="#">
+                <a href="https://www.facebook.com/">
                   <i class="fa fa-facebook"></i>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="#">
+                <a href="https://www.instagram.com/got.vision">
                   <i class="fa fa-instagram"></i>
                 </a>
               </li>
+              <!--
               <li class="list-inline-item">
                 <a href="#">
                   <i class="fa fa-twitter"></i>
                 </a>
               </li>
+              -->
+              <!--
               <li class="list-inline-item">
                 <a href="#">
                   <i class="fa fa-linkedin"></i>
                 </a>
               </li>
+              -->
             </ul>
           </div>
           <div class="col-md-4">
@@ -233,7 +237,14 @@ Vi er her for og hjelpe deg med bedriften din sin identitet, optimalisert for di
         }
         // Enable map zooming with mouse scroll when the user clicks the map
     $('.map').on('click', onMapClickHandler);
-        
+
+
+
+    // Back to index and #section
+    $('html,body').animate({
+        scrollTop: $(window.location.hash).offset().top
+    });        
+    
     </script>
 
 
@@ -241,4 +252,3 @@ Vi er her for og hjelpe deg med bedriften din sin identitet, optimalisert for di
 </html>
 
 
-    
