@@ -9,6 +9,8 @@
     <meta name="author" content="">
 
     <title>Got Vision</title>
+    
+    <link href="img/favicon.ico" rel="icon" type="image/png">
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -20,75 +22,62 @@
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/creative.min.css" rel="stylesheet">
-
+    <link href="css/creative.min.css" rel="stylesheet">    
+    
   </head>
 
   <body id="page-top">
 
-    <!-- Navigation -->
 
-                
-    <nav class="navbar navbar-inverse navbar-light fixed-top" id="mainNav">
-     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top"><!--<img src="./img/logo.png" alt="Got Vision">-->Got Vision</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">Om</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Tjenester</a>
-            </li>
-            <!--
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
-            </li>
-            -->
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Kontakt</a>
-            </li>        
-        </ul>
-        
-        
-        
-        
-        
-        
-        
-        
-      </div>
-     </div>
-    </nav>
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-      
     <header class="masthead">
-      <div class="header-content">
+        <!-- <div class="container"> -->
+            <nav class="navbar">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/"><img src="img/logo.png" alt="" /></a>
+                </div>
+                    
+                <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle">
+                  <i class="fa fa-bars"></i>
+                </a>
+                            
+                <nav id="sidebar-wrapper">
+                  <ul class="sidebar-nav">
+                    <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle">
+                      <i class="fa fa-times"></i>
+                    </a>
+                    <li class="sidebar-brand">
+                      <a class="js-scroll-trigger" href="#top">Got Vision</a>
+                    </li>
+                    <li>
+                      <a class="js-scroll-trigger" href="#about">Om</a>
+                    </li>
+                    <li>
+                      <a class="js-scroll-trigger" href="#services">Tjenester</a>
+                    </li>
+                    <!--
+                    <li>
+                      <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
+                    </li>
+                    -->
+                    <li>
+                      <a class="js-scroll-trigger" href="#contact" onclick=$( "#menu-close").click();>Kontakt</a>
+                    </li>
+                  </ul>
+                </nav>
+            
+            </nav>
+        <!-- </div> -->
+        <div class="header-content">
         <div class="header-content-inner">
           <h1 id="homeHeading">Got Vision</h1>
           <hr>
           <p>Lorem ipsum dolor sit amet</p>
           <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Finn ut Mer</a>
         </div>
-      </div>
+        </div>
     </header>
-
+    
+    
     <section class="bg-primary" id="about">
       <div class="container">
         <div class="row">
@@ -103,6 +92,7 @@ Vi er her for og hjelpe deg med bedriften din sin identitet, optimalisert for di
         </div>
       </div>
     </section>
+    
 
     <section id="services">
       <div class="container">
@@ -146,6 +136,7 @@ Vi er her for og hjelpe deg med bedriften din sin identitet, optimalisert for di
       </div>
     </section>
     
+    
     <section id="showreel">
       <div class="container">
         <div class="row">
@@ -153,13 +144,54 @@ Vi er her for og hjelpe deg med bedriften din sin identitet, optimalisert for di
                 
                 <iframe src="https://player.vimeo.com/video/178152651" class="portfolio-box" width="100%" height="484" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 <!-- <p><a href="https://vimeo.com/178152651">Got Vision - Showreel 2015</a> from <a href="https://vimeo.com/user45257212">Got Vision</a> on <a href="https://vimeo.com">Vimeo</a>.</p> -->
-                
           </div>
         </div>
       </div>
     </section>
+    
+    
+    <!--
+     <section class="p-0" id="portfolio">
+      <div class="container-fluid">
+        <div class="row no-gutter popup-gallery">
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="https://vimeo.com/178152651">
+              <img class="img-fluid" src="img/portfolio/thumbnails/cola.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Category
+                  </div>
+                  <div class="project-name">
+                    Project Name
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section> 
+    -->
 
 
+    <!-- Facts -->
+    <section id="facts">
+        <div class="row counters">
+    
+            <div class="col-lg-6 views text-center">
+                <span data-toggle="counter-up">4000000</span>
+                    <p>Views</p>
+            </div>
+    
+            <div class="col-lg-6 likes text-center">
+                <span data-toggle="counter-up">350000</span>
+                    <p>Likes</p>
+            </div>          
+        </div>
+    </section>
+    
+    
 <!--
     <section class="p-0" id="portfolio">
       <div class="container-fluid">
@@ -265,6 +297,7 @@ Vi er her for og hjelpe deg med bedriften din sin identitet, optimalisert for di
         <a class="btn btn-default btn-xl" href="#">?kundenavn?</a>
       </div>
     </div>
+    
 
     <section id="contact">
       <div class="container">
@@ -289,6 +322,7 @@ Vi er her for og hjelpe deg med bedriften din sin identitet, optimalisert for di
         </div>
       </div>
     </section>
+    
     
     <section id="contact" class="map">
         <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAltGHT2B892-s4kN7LDVwWCS0uEwsqOro&q=Kristian Augusts gate 11&zoom=14">
@@ -343,6 +377,10 @@ Vi er her for og hjelpe deg med bedriften din sin identitet, optimalisert for di
           </div>
         </div>
       </div>
+      
+      <a id="to-top" href="#top" class="btn btn-dark btn-lg js-scroll-trigger">
+        <i class="fa fa-chevron-up fa-fw fa-1x"></i>
+      </a>
     </footer>
     
 
@@ -352,11 +390,30 @@ Vi er her for og hjelpe deg med bedriften din sin identitet, optimalisert for di
 
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <!-- <script src="vendor/scrollreveal/scrollreveal.min.js"></script> -->
     <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/creative.min.js"></script>
+    <!-- Custom scripts for this template  -make one- -->
+    <!-- <script src="js/creative.min.js"></script> -->
+    <script src="js/stylish-portfolio.js"></script>
+    
+    
+    
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        jQuery(document).ready(function( $ ) {
+        
+          // jQuery counterUp
+          $('[data-toggle="counter-up"]').counterUp({
+            delay: 100,
+            time: 10000
+          });
+        
+        });
+    </script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="vendor/extra/counterup.min.js"></script>
 
 
     <!-- Custom Theme JavaScript -->
@@ -381,12 +438,11 @@ Vi er her for og hjelpe deg med bedriften din sin identitet, optimalisert for di
         }
         // Enable map zooming with mouse scroll when the user clicks the map
     $('.map').on('click', onMapClickHandler);
-        
+    
+
     </script>
 
 
   </body>
 </html>
 
-
-    
